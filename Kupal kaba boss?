@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kupal kaba boss?</title>
+  <style>
+    /* General page styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #F5E6F5; /* Soft pastel pink */
+      color: #333;
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #D299CC; /* Light purple */
+      font-family: 'Verdana', sans-serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      font-size: 18px;
+      color: #5C4B6B; /* Darker purple for result text */
+      margin-top: 20px;
+    }
+
+    button {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #D299CC; /* Light purple background */
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #9B7F9C; /* Darker purple on hover */
+    }
+
+    button:active {
+      background-color: #7A6A7B; /* Even darker purple when clicked */
+    }
+
+    #result {
+      font-size: 22px;
+      font-weight: bold;
+      color: #FF9F80; /* Soft coral for result text */
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Code Cute ba ako?</h1>
+  <button onclick="checkAnswer('A')">A. Yes</button>
+  <button onclick="checkAnswer('B')">B. A</button>
+  <button onclick="checkAnswer('C')">C. B</button>
+  <button onclick="checkAnswer('D')">D. All of the Above</button>
+  <button onclick="checkAnswer('E')">E. Crush mo ba ako?</button>
+
+  <p id="result"></p>
+
+  <script>
+    function checkAnswer(answer) {
+      let resultText = '';
+      if (answer === 'D') {
+        resultText = "Correct! Lahat ng sagot ay tama. Code Cute ka nga! 💖";
+      } else if (answer === 'E') {
+        resultText = "Hmmm... Oo!!!😍";
+      } else {
+        resultText = "Tama na rin, kasi lahat ng sagot ay nagpo-point sa 'Yes' 💕";
+      }
+      document.getElementById("result").innerText = resultText;
+    }
+  </script>
+
+</body>
+</html>
